@@ -502,3 +502,21 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Ninja
+src/.ninja_deps
+src/.ninja_log
+src/compile_commands.json
+
+# Build Artifacts
+src/lib/public/linux*/mathlib.a
+src/lib/public/linux*/matsys_controls.a
+src/lib/public/linux*/raytrace.a
+src/lib/public/linux*/tier1.a
+src/lib/public/linux*/vgui_controls.a
+game/mod_*_linux*
+game/steam_appid.txt
+game/**/stats.txt
+game/**/voice_ban.dt
+game/**/videoconfig_*.cfg
+game/**/cfg/server_blacklist.txt
