@@ -31,7 +31,7 @@ $Project "VVIS (Launcher)"
 	{
 		$File	"vvis_launcher.cpp"
 		
-		$File	"StdAfx.cpp"
+		$File	"stdafx.cpp"
 		{
 			$Configuration
 			{
@@ -46,6 +46,6 @@ $Project "VVIS (Launcher)"
 	$Folder	"Header Files"
 	{
 		$File	"$SRCDIR\public\tier1\interface.h"
-		$File	"StdAfx.h"
+		$File	"stdafx.h"
 	}
 }

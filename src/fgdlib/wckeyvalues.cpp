@@ -4,7 +4,7 @@
 //
 //=============================================================================
 
-#include "fgdlib/WCKeyValues.h"
+#include "fgdlib/wckeyvalues.h"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include <tier0/memdbgon.h>
@@ -169,7 +169,7 @@ template<class Base>
 void WCKeyValuesT<Base>::SetValue(const char *pszKey, int iValue)
 {
 	char szValue[100];
-	itoa(iValue, szValue, 10);
+	sprintf(szValue, "%d", iValue);
 
 	SetValue(pszKey, szValue);
 }

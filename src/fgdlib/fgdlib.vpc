@@ -12,6 +12,7 @@ $Configuration
 	$Compiler
 	{
 		$AdditionalIncludeDirectories		"$BASE,$SRCDIR\utils\common"
+		$GCC_ExtraCompilerFlags				"$BASE -fpermissive" [$LINUX]
 	}
 }
 

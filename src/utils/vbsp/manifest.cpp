@@ -3,7 +3,9 @@
 #include "map_shared.h"
 #include "fgdlib/fgdlib.h"
 #include "manifest.h"
+#ifdef WIN32
 #include "windows.h"
+#endif
 
 //-----------------------------------------------------------------------------
 // Purpose: default constructor
@@ -358,10 +360,19 @@ bool CManifest::LoadVMFManifestUserPrefs( const char *pszFileName )
 	DWORD		UserNameSize;
 
 	UserNameSize = sizeof( UserName );
+#ifdef WIN32
 	if ( GetUserName( UserName, &UserNameSize ) == 0 )
 	{
 		strcpy( UserPrefsFileName, "default" );
 	}
+#elif defined(POSIX)
+	if ( getlogin_r( UserName, UserNameSize ) != 0 )
+	{
+		strcpy( UserPrefsFileName, "default" );
+	}
+#else
+	strcpy( UserPrefsFileName, "default" );
+#endif
 
 	sprintf( UserPrefsFileName, "\\%s.vmm_prefs", UserName );
 	V_StripExtension( pszFileName, FileName, sizeof( FileName ) );

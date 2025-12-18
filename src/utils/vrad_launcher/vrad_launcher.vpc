@@ -32,7 +32,7 @@ $Project "VRAD (Launcher)"
 		
 		$File	"vrad_launcher.cpp"
 		
-		$File	"StdAfx.cpp"
+		$File	"stdafx.cpp"
 		{
 			$Configuration
 			{
@@ -49,6 +49,6 @@ $Project "VRAD (Launcher)"
 	{
 		$File	"$SRCDIR\public\tier1\interface.h"
 		$File	"$SRCDIR\public\ivraddll.h"
-		$File	"StdAfx.h"
+		$File	"stdafx.h"
 	}
 }

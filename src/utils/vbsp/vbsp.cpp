@@ -1354,7 +1354,8 @@ int RunVBSP( int argc, char **argv )
 		g_nCubemapSamples = 0;
 
 		// Mark as stale since the lighting could be screwed with new ents.
-		AddBufferToPak( GetPakFile(), "stale.txt", "stale", strlen( "stale" ) + 1, false );
+		char stale[] = "stale";
+		AddBufferToPak( GetPakFile(), "stale.txt", stale, sizeof( stale ), false );
 
 		LoadMapFile (name);
 		SetModelNumbers ();
@@ -1411,7 +1412,8 @@ int RunVBSP( int argc, char **argv )
 		{
 			LoadBSPFile_FileSystemOnly (mapFile);
 			// Mark as stale since the lighting could be screwed with new ents.
-			AddBufferToPak( GetPakFile(), "stale.txt", "stale", strlen( "stale" ) + 1, false );
+			char stale[] = "stale";
+			AddBufferToPak( GetPakFile(), "stale.txt", stale, sizeof( stale ), false );
 		}
 
 		LoadMapFile (name);
