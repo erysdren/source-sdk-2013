@@ -3215,4 +3215,14 @@ FORCEINLINE int BoxOnPlaneSideSIMD( const fltx4& emins, const fltx4& emaxs, cons
 	return sides[0];
 }
 
+inline const float VectorGetByIndexSIMD( const fltx4& v, unsigned int i )
+{
+	union {
+		fltx4 v;
+		float a[4];
+	} u;
+	u.v = v;
+	return u.a[i];
+}
+
 #endif // _ssemath_h

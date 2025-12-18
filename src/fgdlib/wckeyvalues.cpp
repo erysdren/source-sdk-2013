@@ -149,7 +149,7 @@ const char *WCKeyValuesT<Base>::GetValue(const char *pszKey, int *piIndex) const
 		if(piIndex)
 			piIndex[0] = i;
 			
-		return m_KeyValues[i].szValue;
+		return this->m_KeyValues[i].szValue;
 	}
 }
 
@@ -251,7 +251,7 @@ void WCKeyValuesT<Base>::SetValue(const char *pszKey, const char *pszValue)
 	{
 		if (pszValue != NULL)
 		{
-			V_strncpy(m_KeyValues[i].szValue, szTmpValue, sizeof(m_KeyValues[i].szValue));
+			V_strncpy(this->m_KeyValues[i].szValue, szTmpValue, sizeof(this->m_KeyValues[i].szValue));
 		}
 		//
 		// If we are setting to a NULL value, delete the key.
@@ -270,7 +270,7 @@ void WCKeyValuesT<Base>::SetValue(const char *pszKey, const char *pszValue)
 template<class Base>
 void WCKeyValuesT<Base>::RemoveAll(void)
 {
-	m_KeyValues.RemoveAll();
+	this->m_KeyValues.RemoveAll();
 }
 
 
