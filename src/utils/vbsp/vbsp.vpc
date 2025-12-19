@@ -49,7 +49,7 @@ $Project "VBSP"
 		$File	"manifest.cpp"
 		$File	"materialpatch.cpp"
 		$File	"materialsub.cpp"
-		$File	"..\common\mstristrip.cpp" [$WIN32]
+		$File	"..\common\mstristrip.cpp"
 		$File	"nodraw.cpp"
 		$File	"normals.cpp"
 		$File	"overlay.cpp"
@@ -61,7 +61,7 @@ $Project "VBSP"
 		$File	"staticprop.cpp"
 		$File	"textures.cpp"
 		$File	"tree.cpp"
-		$File	"..\common\utilmatlib.cpp" [$WIN32]
+		$File	"..\common\utilmatlib.cpp"
 		$File	"vbsp.cpp"
 		$File	"worldvertextransitionfixup.cpp"
 		$File	"writebsp.cpp"
@@ -80,7 +80,7 @@ $Project "VBSP"
 			$File	"..\common\pacifier.cpp"
 			$File	"..\common\polylib.cpp"
 			$File	"..\common\scriplib.cpp"
-			$File	"..\common\threads.cpp" [$WIN32]
+			$File	"..\common\threads.cpp"
 			$File	"..\common\tools_minidump.cpp" [$WIN32]
 			$File	"..\common\tools_minidump.h" [$WIN32]
 		}
@@ -121,7 +121,7 @@ $Project "VBSP"
 			$File	"..\common\pacifier.h"
 			$File	"..\common\polylib.h"
 			$File	"$SRCDIR\public\tier1\tokenreader.h"
-			$File	"..\common\utilmatlib.h" [$WIN32]
+			$File	"..\common\utilmatlib.h"
 			$File	"..\vmpi\vmpi.h"
 			$File	"$SRCDIR\public\zip_uncompressed.h"
 		}
@@ -144,7 +144,7 @@ $Project "VBSP"
 		$File	"$SRCDIR\public\disp_common.h"
 		$File	"$SRCDIR\public\Iscratchpad3d.h"
 		$File	"$SRCDIR\public\mathlib\mathlib.h"
-		$File	"..\common\mstristrip.h" [$WIN32]
+		$File	"..\common\mstristrip.h"
 		$File	"$SRCDIR\public\nmatrix.h"
 		$File	"$SRCDIR\public\NTree.h"
 		$File	"$SRCDIR\public\nvector.h"
@@ -154,7 +154,7 @@ $Project "VBSP"
 		$File	"$SRCDIR\public\scratchpad3d.h"
 		$File	"..\common\scriplib.h"
 		$File	"$SRCDIR\public\studio.h"
-		$File	"..\common\threads.h" [$WIN32]
+		$File	"..\common\threads.h"
 		$File	"$SRCDIR\public\tier1\utlbuffer.h"
 		$File	"$SRCDIR\public\tier1\utllinkedlist.h"
 		$File	"$SRCDIR\public\tier1\utlmemory.h"

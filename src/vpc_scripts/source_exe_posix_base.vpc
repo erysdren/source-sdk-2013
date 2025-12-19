@@ -12,7 +12,7 @@ $MacroRequired				"OUTBINDIR"
 
 $Macro OUTBINDIR	"$OUTBINDIR$PLATSUBDIR" [!$GAME_OUTPUT && ($LINUX64 || $LINUXARM64)]
 
-$Conditional IS_LIB_PROJECT		"1"
+$Conditional IS_LIB_PROJECT		"0"
 $Include "$SRCDIR\vpc_scripts\source_posix_base.vpc"
 
 $Include "$SRCDIR\vpc_scripts\loadaddress.vpc"

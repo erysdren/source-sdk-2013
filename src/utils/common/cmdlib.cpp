@@ -61,8 +61,6 @@ CUtlLinkedList<SpewHookFn, unsigned short> g_ExtraSpewHooks;
 bool g_bStopOnExit = false;
 void (*g_ExtraSpewHook)(const char*) = NULL;
 
-#if defined( _WIN32 ) || defined( WIN32 )
-
 void CmdLib_FPrintf( FileHandle_t hFile, const char *pFormat, ... )
 {
 	static CUtlVector<char> buf;
@@ -128,6 +126,7 @@ char* CmdLib_FGets( char *pOut, int outSize, FileHandle_t hFile )
 	return pOut;
 }
 
+#if defined( _WIN32 ) || defined( WIN32 )
 #if !defined( _X360 )
 #include <wincon.h>
 #endif
